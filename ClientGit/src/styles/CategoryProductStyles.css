@@ -1,11 +1,3 @@
-:root {
-  /* --bg-color: #184D47; */
-  --bg-color: #2A2F4F;
-  /* --bg-color: #E57C23; */
-  /* --bg-color: #2E3840; */
-  /* --bg-color: #025464; */
-}
-
 .category {
   flex-wrap: wrap;
   margin-top: 80px !important;

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Arizonia&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -6,60 +8,57 @@
   box-sizing: border-box;
 }
 
+
+/*  font-family: 'Aclonica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    font-family: 'Arizonia', cursive;    */
+
 :root {
-  /* --bg-color: #184D47; */
-  --bg-color: #2A2F4F;
-  /* --bg-color: #E57C23; */
-  /* --bg-color: #2E3840; */
-  /* --bg-color: #025464; */
+  --bg-color: #e4e3f2 !important;
+  --btn-bg: black;
+  --bg-sec: black;
 }
 
 
-/* //navbar css */
+/*  Header //navbar css */
 .navbar {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
-  box-shadow: 0 8px 6px -6px gray;
+  background-color: white !important;
   --webkit-box-shadow: 0 8px 6px -6px gray;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  /* background-color: #E57C23 !important; */
-  /* color: white !important; */
-
-  /* background-color: var(--bg-color) !important;
-  color: white !important; */
-}
-
-
-.nav-link {
-  font-weight: 300 !important;
-
-  /* color: white !important; */
+  box-shadow: 0px 5px 15px rgba(184, 236, 242, 0.3);
 }
 
 .active {
-  border-bottom: 2px solid black;
-
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(103, 176, 25);
 }
 
 .navbar-brand {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
-  color: var(--bg-color);
+  color: rgb(0, 0, 0);
   margin-left: 40px;
+  font-family: 'Arizonia', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-brand-img {
-  width: 5%;
-  margin-left: 40px;
+.nav-item .nav-link{
+  font-weight: 300 !important;
 }
 
-/* .navbar-brand {
-  color: white;
-} */
+
+/* SEARCH BOX */
+
+.search_box form{
+  border-radius: 10px;
+  width: 400px;
+  height: 30px;
+  margin-top: 7px;
+}
 
 .search-form {
   margin-right: 10px;
@@ -68,29 +67,23 @@
 
 .search-form input {
   border: none;
-  border-radius: 0;
-  width: 150px;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-}
-
-.search-form input:hover {
-  outline: 1px solid var(--bg-color);
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  background-color: var(--bg-color);
 }
 
 .search-form button {
-  background-color: var(--bg-color);
-  border-radius: 0;
-  color: white;
+  margin-left: -10px;
+  margin-bottom: 7px;
   border-radius: 5px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: var(--bg-color);
+  font-size: 20px;
+  height: 30px;
 }
 
-
-
-.search-form button:hover {
-  background-color: white;
-  color: var(--bg-color);
-  outline: 1px solid var(--bg-color);
+.search_icon{
+  margin-top: -12px;
 }
 
 
@@ -127,6 +120,7 @@
   background-color: var(--bg-color);
   color: white;
 }
+
 
 /* ========================================= */
 /* =========contact us ========= */
@@ -174,14 +168,16 @@
 
 
 
-/* ========================================= */
-/* =========About us ========= */
 
-
-/* ==================== */
+/* =======  All Categories  =============  */
 .product-link {
   text-decoration: none !important;
   color: var(--bg-color) !important;
+}
+
+.cat_card{
+  border: 2px solid var(--bg-sec);
+  color: var(--bg-sec) !important;
 }
 
 .cat-btn {
@@ -189,12 +185,12 @@
   font-size: 24px;
   text-transform: uppercase;
   border: 1px solid var(--bg-color);
-  color: var(--bg-color);
+  color: var(--bg-sec);
 }
 
 .cat-btn:hover {
   background-color: var(--bg-color);
-  color: white;
+  color: var(--bg-sec);
 }
 
 
@@ -204,10 +200,11 @@
 #footerDiv {
   display: flex;
   width: 100%;
-  height: 380px;
+  height: 80vh;
   justify-content: space-around;
   margin-top: 30px;
-  background-color: var(--bg-color);
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #footLeft {
@@ -216,6 +213,11 @@
   display: flex;
   flex-direction: column;
   padding: 50px 0px 0px 50px;
+}
+#links h4{
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 #footLeft #foot-logo {
@@ -230,9 +232,9 @@
 }
 
 #footLeft #social img {
-  width: 20px;
-  margin-left: 10px;
-  border-radius: 5px;
+  width: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
 }
 
 #footCenLeft {
@@ -313,7 +315,6 @@
 
 #subscribe #send-btn {
   background-color: red;
-  /* background: rgb(55, 32, 172); */
   color: white;
   font-size: 15px;
   outline: none;
@@ -329,10 +330,15 @@
 
 .footer-copy {
   margin-top: 3px;
-  background-color: #1d213f;
+  background-color: black;
   color: white;
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+.footer-copy h1{
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -342,9 +348,6 @@
     display: none;
   }
 }
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -382,12 +385,9 @@
     flex-direction: column;
     margin-top: 10px;
     margin-left: 6px;
-
-
   }
 
   .links-for-mobile span .link-pages {
-
     text-decoration: none !important;
     color: rgb(255, 255, 255) !important;
     margin-bottom: 5px;
